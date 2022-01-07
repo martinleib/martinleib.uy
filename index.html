@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+        integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link href="assets/app.css" rel="stylesheet">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.5/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.5/addons/p5.dom.js"></script>
+    <script src="https://kit.fontawesome.com/f5a444958a.js" crossorigin="anonymous"></script>
+    <title>Martin Leib</title>
+</head>
+
+<body>
+    <div class="main fixed-top text-uppercase text-light">
+        <h1 class="movingthingy h4 animate__animated animate__fadeInUp">Martin Leib</h1>
+
+        <div class="flexrow">
+            <div class="info text-light text-uppercase">
+                <a class="trabajostrigger movingthingy h5 animate__animated animate__fadeInUp"
+                    href="#works">Trabajos</a>
+                <br />
+                <a class="soundkitstrigger movingthingy h5 animate__animated animate__fadeInUp"
+                    href="#soundkits">Soundkits</a>
+                <br />
+                <a class="contactotrigger movingthingy h5 animate__animated animate__fadeInUp"
+                    href="#contact">Contacto</a>
+                </nav>
+            </div>
+
+            <div class="details text-light text-uppercase">
+                <div class="trabajosinfo">
+                    <a class="movingthingy h5 despuesdelatormentatrigger animate__animated animate__fadeInLeft" href="#"
+                        style="webkit-animation-delay: 0.2s; animation-delay: 0.2s;">Después de la tormenta <span
+                            class="font-italic">(EP)</span></a>
+                    <br />
+                    <a class="movingthingy h5 zeptrestrigger animate__animated animate__fadeInLeft" href="#"
+                        style="webkit-animation-delay: 0.4s; animation-delay: 0.4s;">Zeptres
+                        <span class="font-italic">(Álbum)</span></a>
+                    <br />
+                    <a class="movingthingy h5 animate__animated animate__fadeInLeft"
+                        style="webkit-animation-delay: 0.6s; animation-delay: 0.6s;"
+                        href="https://soundcloud.com/martinleib/sets/prod?si=840c5acd91af4dfc904999951b78ffd1&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing"
+                        target="_blank">Temas producidos por mi <span class="font-italic">(Playlist)</span></a>
+                    <br />
+                </div>
+
+                <div class="soundkitsinfo">
+                    <a class="movingthingy h5 animate__animated animate__fadeInLeft"
+                        style="webkit-animation-delay: 0.2s; animation-delay: 0.2s;" href="https://payhip.com/b/dmLlY"
+                        target="_blank">Experimental Soundkit
+                        <span class="font-italic">('21)</span></a>
+                    <br />
+                    <a class="movingthingy h5 animate__animated animate__fadeInLeft"
+                        style="webkit-animation-delay: 0.4s; animation-delay: 0.4s;" href="https://payhip.com/b/KLFP9"
+                        target="_blank">Stash Soundkit <span class="font-italic">('22)</span></a>
+                    <br />
+                </div>
+
+                <div class="contactoinfo">
+                    <a class="movingthingy h5 animate__animated animate__fadeInLeft" href="mailto:hola@martinleib.uy"
+                        style="webkit-animation-delay: 0.2s; animation-delay: 0.2s;"
+                        target="_blank" id="emailobf"></a>
+                </div>
+            </div>
+
+            <div class="datadiscos text-light text-uppercase">
+                <div class="zeptresinfo">
+                    <p class="movingthingy h5 animate__animated animate__fadeInLeft">ZEPTRES <span class="font-italic"
+                            style="webkit-animation-delay: 0.2s; animation-delay: 0.2s;">(Álbum)</span></p>
+                    <br />
+                    <a class="movingthingy h5 animate__animated animate__fadeInLeft"
+                        href="https://soundcloud.com/martinleib/sets/zeptres?si=10db54657cab4faeb3d721ba5353abb9&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing"
+                        target="_blank" style="webkit-animation-delay: 0.4s; animation-delay: 0.4s;">Soundcloud</a>
+                    <br />
+                    <a class="movingthingy h5 animate__animated animate__fadeInLeft"
+                        href="https://music.amazon.com/albums/B09K7MH41M" target="_blank"
+                        style="webkit-animation-delay: 0.6s; animation-delay: 0.6s;">Amazon
+                        Music</a>
+                    <br />
+                    <a class="movingthingy h5 animate__animated animate__fadeInLeft"
+                        href="https://music.apple.com/us/album/1591897067" target="_blank"
+                        style="webkit-animation-delay: 0.8s; animation-delay: 0.8s;">Apple
+                        Music</a>
+                    <br />
+                    <a class="movingthingy h5 animate__animated animate__fadeInLeft"
+                        href="https://www.deezer.com/us/album/267985542" target="_blank"
+                        style="webkit-animation-delay: 1.0s; animation-delay: 1.0s;">Deezer</a>
+                    <br />
+                    <a class="movingthingy h5 animate__animated animate__fadeInLeft"
+                        href="https://open.spotify.com/album/63v4yih7isghbAH8z3tB6M?si=rbBiEo3iQmK2M3sFg762Vw"
+                        style="webkit-animation-delay: 1.2s; animation-delay: 1.2s;" target="_blank">Spotify</a>
+                    <br />
+                    <a class="movingthingy h5 animate__animated animate__fadeInLeft"
+                        href="https://youtube.com/playlist?list=PLZkq7apwyI-5NJFPdG0KigxqbCJfh4DiM"
+                        style="webkit-animation-delay: 1.4s; animation-delay: 1.4s;" target="_blank">Youtube</a>
+                    <br />
+                    <p class="movingthingy h5 animate__animated animate__fadeInLeft"
+                        style="webkit-animation-delay: 1.6s; animation-delay: 1.6s;">+</a>
+                        <br />
+                </div>
+
+                <div class="despuesdelatormentainfo">
+                    <p class="movingthingy h5 animate__animated animate__fadeInLeft"
+                        style="webkit-animation-delay: 0.2s; animation-delay: 0.2s;">Después de la tormenta <span
+                            class="font-italic">(EP)</span></p>
+                    <br />
+                    <a class="movingthingy h5 animate__animated animate__fadeInLeft"
+                        style="webkit-animation-delay: 0.4s; animation-delay: 0.4s;" href="#"
+                        target="_blank">Soundcloud</a>
+                    <br />
+                    <a class="movingthingy h5 animate__animated animate__fadeInLeft" href="#" target="_blank"
+                        style="webkit-animation-delay: 0.6s; animation-delay: 0.6s;">Amazon
+                        Music</a>
+                    <br />
+                    <a class="movingthingy h5 animate__animated animate__fadeInLeft" href="#" target="_blank"
+                        style="webkit-animation-delay: 0.8s; animation-delay: 0.8s;">Apple
+                        Music</a>
+                    <br />
+                    <a class="movingthingy h5 animate__animated animate__fadeInLeft"
+                        style="webkit-animation-delay: 1.0s; animation-delay: 1.0s;" href="#" target="_blank">Deezer</a>
+                    <br />
+                    <a class="movingthingy h5 animate__animated animate__fadeInLeft"
+                        style="webkit-animation-delay: 1.2s; animation-delay: 1.2s;" href="#"
+                        target="_blank">Spotify</a>
+                    <br />
+                    <a class="movingthingy h5 animate__animated animate__fadeInLeft" href="#"
+                        style="webkit-animation-delay: 1.4s; animation-delay: 1.4s;" target="_blank">Youtube</a>
+                    <br />
+                    <p class="movingthingy h5 animate__animated animate__fadeInLeft"
+                        style="webkit-animation-delay: 1.6s; animation-delay: 1.6s;">+</a>
+                        <br />
+                </div>
+            </div>
+        </div>
+
+        <div class="fixed-bottom mt-0 mb-0">
+              <div class="relative-bottom mt-0 mb-0">
+                  <div class="animate__animated animate__fadeInUp p-2 mb-0 mt-0 text-center text-footer">
+                    <a href="https://instagram.com/martin.leib" target="_blank" class="mr-2"><i class="fab fa-2x fa-instagram"></i></a>
+                    <a href="https://twitter.com/_mleib" target="_blank" class="mr-2"><i class="fab fa-2x fa-twitter"></i></a>
+                    <a href="https://www.youtube.com/channel/UCwbL9GBR9MCOjpdMy2TnGeg" target="_blank" class="mr-2"><i class="fab fa-2x fa-youtube"></i></a>
+                    <a href="https://soundcloud.com/martinleib" target="_blank"><i class="fab fa-2x fa-soundcloud"></i></a>
+                    <br class="mb-3"/>
+                    <a id="footer-a">
+                      Página web diseñada y desarrollada por Martin Leib</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+        </footer>
+        <script src="assets/canvas.js"></script>
+        <canvas id="canvas"></canvas>
+
+        <script>
+            var _0x129d8c=_0x5632;function _0x5632(_0x497234,_0x2464bc){var _0x14082d=_0x1408();return _0x5632=function(_0x56320b,_0xb9a65){_0x56320b=_0x56320b-0xdc;var _0x7c0da5=_0x14082d[_0x56320b];return _0x7c0da5;},_0x5632(_0x497234,_0x2464bc);}(function(_0x196ea9,_0xe4c57f){var _0x6c5a3f=_0x5632,_0x2a5f08=_0x196ea9();while(!![]){try{var _0x370a96=-parseInt(_0x6c5a3f(0xe2))/0x1*(-parseInt(_0x6c5a3f(0xde))/0x2)+parseInt(_0x6c5a3f(0xdd))/0x3+parseInt(_0x6c5a3f(0xeb))/0x4*(-parseInt(_0x6c5a3f(0xe8))/0x5)+-parseInt(_0x6c5a3f(0xe3))/0x6*(parseInt(_0x6c5a3f(0xec))/0x7)+parseInt(_0x6c5a3f(0xea))/0x8+-parseInt(_0x6c5a3f(0xe0))/0x9*(-parseInt(_0x6c5a3f(0xdf))/0xa)+-parseInt(_0x6c5a3f(0xe5))/0xb*(parseInt(_0x6c5a3f(0xdc))/0xc);if(_0x370a96===_0xe4c57f)break;else _0x2a5f08['push'](_0x2a5f08['shift']());}catch(_0x324c7b){_0x2a5f08['push'](_0x2a5f08['shift']());}}}(_0x1408,0x1a20a));var email=_0x129d8c(0xe1);function _0x1408(){var _0x31440c=['191siCKhq','112818LaOUSP','setAttribute','65967sjiMUG','innerHTML','href','18805WqcdrA','emailobf','493368CAHLYe','64jzRbgc','7IKzlgJ','732TjGphm','302490IzVXpf','2114WwkVIH','1874260bcOiNe','9mzzDDl','hola@martinleib.uy'];_0x1408=function(){return _0x31440c;};return _0x1408();}document['getElementById'](_0x129d8c(0xe9))[_0x129d8c(0xe6)]=email,document['getElementById'](_0x129d8c(0xe9))[_0x129d8c(0xe4)](_0x129d8c(0xe7),'mailto:'+email);
+        </script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+            integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+        <script>
+            $('.zeptresinfo').hide();
+            $('.despuesdelatormentainfo').hide();
+            $('.trabajosinfo').hide();
+            $('.soundkitsinfo').hide();
+            $(".contactoinfo").hide();
+
+            $(document).ready(function () {
+                $(".trabajostrigger").click(function () {
+                    $(".trabajosinfo").fadeToggle();
+                    $(".soundkitsinfo").fadeOut(250);
+                    $(".contactoinfo").fadeOut(250);
+                    $(".zeptresinfo").fadeOut(250);
+                    $(".despuesdelatormentainfo").fadeOut(250);
+                });
+
+                $(".soundkitstrigger").click(function () {
+                    $(".soundkitsinfo").fadeToggle();
+                    $(".trabajosinfo").fadeOut(250);
+                    $(".contactoinfo").fadeOut(250);
+                    $(".zeptresinfo").fadeOut(250);
+                    $(".despuesdelatormentainfo").fadeOut(250);
+                });
+
+                $(".contactotrigger").click(function () {
+                    $(".contactoinfo").fadeToggle();
+                    $(".trabajosinfo").fadeOut(250);
+                    $(".soundkitsinfo").fadeOut(250);
+                    $(".zeptresinfo").fadeOut(250);
+                    $(".despuesdelatormentainfo").fadeOut(250);
+                });
+
+                $(".despuesdelatormentatrigger").click(function () {
+                    $(".despuesdelatormentainfo").fadeToggle();
+                    $(".zeptresinfo").fadeOut(250);
+                });
+
+                $(".zeptrestrigger").click(function () {
+                    $(".zeptresinfo").fadeToggle();
+                    $(".despuesdelatormentainfo").fadeOut(250);
+                });
+            });
+        </script>
+</body>
+
+</html>
