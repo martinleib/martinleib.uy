@@ -1,0 +1,22 @@
+@font-face {
+    font-family: Akkurat;
+    src: url(AkkuratMono.otf);
+}
+
+/*@import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');*/
+
+* {
+    font-family: 'Akkurat' !important; 
+    /*font-family: 'Manrope', sans-serif !important;*/
+    cursor: url(https://tobiasahlin.com/static/cursors/default.png), auto !important;
+}
+
+a {
+    text-decoration: none;
+    transition: 0.4s;
+    color: #ff8922;
+}
+
+a:hover {
+    color: #ffcdae;
+}
